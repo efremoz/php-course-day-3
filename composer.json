@@ -1,5 +1,5 @@
 {
-    "name": "php-course/day3-2",
+    "name": "efremov/day3",
     "description": "Simple class to print \"Hello, world\"",
     "type": "library",
     "require": {},
