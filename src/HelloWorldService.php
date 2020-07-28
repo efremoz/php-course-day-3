@@ -11,8 +11,19 @@ namespace Demo;
 
 class HelloWorldService
 {
-    public function welcome(): void
+    private $name = 'World';
+
+    public function welcome(): string
     {
-        echo 'Hello World' . PHP_EOL;
+        return sprintf('Hello, %s', $this->name);
     }
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
 }
